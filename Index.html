@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<link href="css/bootstrap.css" rel="stylesheet" ></a>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <style type="text/css">
+ body{
+background-color:gold;
+ }
+ body{
+ margin:10px;
+ }
+ </style>
+</head>
+
+<body>
+ <div class="timeline-post" >
+ <textarea id="status" placeholder="What is your mind?"  rows="3" cols="30"></textarea>
+ <button class="btn btn-primary" onclick="postStatus()">posts</button>
+ </div><br>
+ <div>
+ 
+ </div><hr>
+ <div id="posts" >  </div>
+ <script type="text/javascript">
+function postStatus(){
+var textElement=document.getElementById("status");
+var ststus=textElement.value;
+
+var postContainer=document.getElementById("posts");
+ postContainer.append("status ");
+}
+
+</script>
+</body>
+
+</html>
